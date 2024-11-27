@@ -1,0 +1,219 @@
+/* google fonts */
+.doto{
+  font-family: 'doto', sans-serif;
+  font-size: 2rem;
+}
+#title{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-image:url("/1.jpg"); */
+    background-size: auto;
+    color: #0033ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* White with transparency */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin: 10vmin;
+    max-width: 500px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1s ease-out;
+  }
+  
+  .container.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .profile-pic {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #254ce9;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  h1 {
+    margin: 10px 0;
+    font-size: 24px;
+    margin: 15px;
+  }
+  
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #1845fa75;
+    color: #ffffff7e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s
+  }
+  
+  .button:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-links{
+    margin: 20px;
+  }
+  .social-links a i{
+    margin: 10px;
+    color: #1845fa;
+    text-decoration: none;
+    font-size: 5vmin;
+    transition: color 0.9s;
+    transition: transform .2s;
+  }
+  .others h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200
+  }
+  .others a i{
+    margin: 5px 15px;
+    text-decoration: none;
+    font-size: 5vmin;
+    transition: color 0.9s;
+    transition: transform .2s;
+  }
+  .others a #one{
+    color: #1845fa;
+
+  }
+  .others a #one:hover{
+    color: #0323db;
+    transform: scale(1.2) translateY(-5px);
+
+  }
+#commingsoon{
+  color: #1845fa75;
+}
+  
+  .social-links a i:hover {
+    color: #0323db;
+    transform: scale(1.2) translateY(-5px);
+  }
+
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1.2s forwards ease-out;
+  }
+  
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .fade-in:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .fade-in:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+
+
+
+
+
+/* WEBSITE BACKGROUND */
+
+  html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 48s linear infinite alternate;
+    background-image: url("2.jpg");
+    background-size: contain;
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 36s;
+}
+
+
+.content {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+  
