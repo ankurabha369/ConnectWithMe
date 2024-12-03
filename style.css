@@ -216,4 +216,14 @@ h1 {
         transform: translateX(25%);
     }
 }
-  
+#two svg{
+  height: 8vmin;
+  position: relative;
+  top: 2vmin;
+  fill: #1845fa
+}
+#two svg:hover{
+  transform: scale(1.2) translateY(-5px);
+  transition: transform .2s;
+
+}
