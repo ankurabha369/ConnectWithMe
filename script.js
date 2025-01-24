@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   container.classList.add("visible");
 
   // Add event listeners to social links for bounce effect
-  const socialLinks = document.querySelectorAll(".social-links a");
+  const socialLinks = document.querySelectorAll(".social-links div");
   socialLinks.forEach((link) => {
     link.addEventListener("mouseenter", () => {
       link.style.transform = "scale(1.2)";
