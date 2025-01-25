@@ -93,9 +93,7 @@ body {
 
   }
 
-  .social-links div:hover {
-    transform: scale(1.2) translateY(-5px);
-  }
+ 
 
   .social-links a
   {
